@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="./public/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if (scroll > 50) {
+        $(".header").css("background" , "green");
+      }
+      else{
+        $(".header").css("background" , "rgb(91,169,236)");  	
+      }
+    })
+  })
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+       <a href="#">
+        <img src="./assests/images/pollution-icon-vector-23490688.jpg">
+       </a>
+    </div>
+    <div class="nav">
+      <input type="checkbox" class="toggle-menu">
+      <div class="hamburger"></div>
+      <ul class="menu">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="#">Pollution</a></li>
+         <li><a href="#">Details</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="img">
+    <img src="./assests/images/nat-1.jpg" height="400px" width="400px" class="i1">
+  </div>
+  
+  
+</body>
+</html>
+
+
